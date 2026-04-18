@@ -1,0 +1,7 @@
+Agent-layer test matrix
+
+- valid request -> ok
+- missing field -> error_validacion
+- predictive fallback -> fallback
+- provider degradation -> degraded
+- scenario rules-only path -> ok or fallback depending on predictive result

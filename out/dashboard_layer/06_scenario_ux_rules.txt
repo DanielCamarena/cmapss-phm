@@ -1,0 +1,5 @@
+Scenario UX rules
+
+- Always show assumptions and safety notes before interpretive text.
+- Render baseline vs scenario values distinctly from prose interpretation.
+- Treat rules_only mode as first-class, not as a degraded placeholder.

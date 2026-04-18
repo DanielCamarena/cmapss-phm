@@ -1,0 +1,6 @@
+Dashboard user flows
+
+1. Operator loads the dashboard and edits or accepts the default sample payload.
+2. Operator triggers a deterministic decision request and receives Summary and Analysis outputs.
+3. Operator optionally triggers a scenario comparison and reviews assumptions and safety notes.
+4. Technical users inspect trace, audit identifiers, and contract snapshots in the Technical Audit tab.

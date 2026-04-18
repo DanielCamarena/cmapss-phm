@@ -1,0 +1,6 @@
+Dashboard mapping
+
+- Summary: rul_pred, risk_level, recommendation_text, recommendation_priority
+- Analysis: risk_score, confidence_band, recommendation_alternatives, trace
+- Scenarios: proposed_payload, change_summary, comparison, comparison_interpretation, operator_guidance
+- Technical Audit: audit_record_id, service_status, model_version, timestamp, trace

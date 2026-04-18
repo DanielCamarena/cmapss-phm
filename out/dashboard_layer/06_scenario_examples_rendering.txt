@@ -1,0 +1,6 @@
+Scenario rendering notes
+
+Current scenario mode: rules_only
+Baseline RUL: 123.955
+Scenario RUL: 123.874
+Delta: -0.081

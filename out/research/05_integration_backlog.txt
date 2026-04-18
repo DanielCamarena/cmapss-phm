@@ -1,0 +1,17 @@
+Integration backlog for Plan 3
+
+P0
+- Implement row-level tabular training baselines.
+- Implement deterministic preprocessing loader from Plan 1 config.
+- Define the v1 inference schema and structured output payload.
+- Add evaluation scripts that report global and per-subset metrics.
+
+P1
+- Implement sequence-model training with 30-step and 50-step windows.
+- Add calibration or empirical confidence-band estimation.
+- Add fallback routing between champion and stable baseline.
+
+P2
+- Add optional ensemble or hybrid strategies.
+- Add expanded robustness and drift checks.
+- Add richer trace and monitoring outputs for higher layers.

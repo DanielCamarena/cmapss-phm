@@ -1,0 +1,7 @@
+Deploy checklist
+
+- cmapss conda environment available
+- streamlit and plotly installed
+- predictive_layer artifacts present
+- agent_layer artifacts present
+- local smoke report generated

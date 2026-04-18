@@ -1,0 +1,166 @@
+{
+  "request": {
+    "dataset_id": "FD001",
+    "unit_id": 1,
+    "cycle": 50,
+    "op_settings": {
+      "op_setting_1": 0.1,
+      "op_setting_2": -0.2
+    },
+    "sensors": {
+      "sensor_2": 0.0,
+      "sensor_3": 0.0,
+      "sensor_4": 0.0,
+      "sensor_7": 0.0,
+      "sensor_8": 0.0,
+      "sensor_9": 0.0,
+      "sensor_11": 0.0,
+      "sensor_12": 0.0,
+      "sensor_13": 0.0,
+      "sensor_14": 0.0,
+      "sensor_15": 0.0,
+      "sensor_17": 0.0,
+      "sensor_20": 0.0,
+      "sensor_21": 0.0
+    },
+    "source": "smoke_test"
+  },
+  "decision_response": {
+    "rul_pred": 123.955,
+    "confidence_band": {
+      "lower": 102.672,
+      "upper": 145.238,
+      "method": "empirical_abs_error_quantiles"
+    },
+    "risk_level": "healthy",
+    "risk_score": 35,
+    "recommendation_text": "Continue operation under normal monitoring while keeping the unit in the routine review queue.",
+    "recommendation_priority": "P3",
+    "recommendation_alternatives": [
+      "Track trend changes rather than scheduling immediate intervention.",
+      "Use periodic scenario checks to detect sensitivity to operating-condition shifts."
+    ],
+    "rationale": "RUL prediction is 123.95 cycles, which maps to `healthy` under the frozen threshold policy. Confidence-band width is 42.57 cycles and contributes to the final risk score.",
+    "safety_notes": [],
+    "model_version": "predictive-layer-v1/rf",
+    "trace": {
+      "dataset_id": "FD001",
+      "feature_schema_version": "v1",
+      "preprocessing_version": "plan1-baseline-v1",
+      "fallback_model": "hgb"
+    },
+    "audit_record_id": "48f5966f-ba19-4682-a8ab-5e05f0dcefbf",
+    "service_status": "ok",
+    "timestamp": "2026-04-18T15:24:19.186314+00:00"
+  },
+  "scenario_response": {
+    "proposed_payload": {
+      "dataset_id": "FD001",
+      "unit_id": 1,
+      "cycle": 50,
+      "op_settings": {
+        "op_setting_1": 0.15,
+        "op_setting_2": -0.2
+      },
+      "sensors": {
+        "sensor_2": 0.0,
+        "sensor_3": 0.0,
+        "sensor_4": 0.0,
+        "sensor_7": 0.0,
+        "sensor_8": 0.0,
+        "sensor_9": 0.0,
+        "sensor_11": -0.08,
+        "sensor_12": -0.08,
+        "sensor_13": 0.0,
+        "sensor_14": 0.0,
+        "sensor_15": -0.08,
+        "sensor_17": 0.0,
+        "sensor_20": 0.0,
+        "sensor_21": 0.0
+      },
+      "source": "smoke_test"
+    },
+    "change_summary": [
+      "Raised `op_setting_1` by 0.05 to test sensitivity to a moderate operating-condition shift.",
+      "Reduced `sensor_11` by 0.08 to simulate a mild worsening in health-sensitive measurements.",
+      "Reduced `sensor_12` by 0.08 to simulate a mild worsening in health-sensitive measurements.",
+      "Reduced `sensor_15` by 0.08 to simulate a mild worsening in health-sensitive measurements."
+    ],
+    "assumptions": [
+      "The unit remains within a plausibly valid operating envelope after the adjustment."
+    ],
+    "safety_notes": [
+      "This scenario is deterministic and intended for comparative analysis only.",
+      "Scenario outputs should not replace physical inspection or engineering judgment."
+    ],
+    "comparison": {
+      "baseline_rul_pred": 123.955,
+      "scenario_rul_pred": 123.874,
+      "delta_rul_pred": -0.081,
+      "baseline_risk_level": "healthy",
+      "scenario_risk_level": "healthy"
+    },
+    "comparison_interpretation": "Scenario changes shifted predicted RUL by -0.081 cycles.",
+    "operator_guidance": "Use the scenario result to compare sensitivity, not as a standalone maintenance order.",
+    "assistant_mode": "rules_only",
+    "llm_model_used": null,
+    "baseline": {
+      "rul_pred": 123.955,
+      "confidence_band": {
+        "lower": 102.672,
+        "upper": 145.238,
+        "method": "empirical_abs_error_quantiles"
+      },
+      "risk_level": "healthy",
+      "risk_score": 35,
+      "recommendation_text": "Continue operation under normal monitoring while keeping the unit in the routine review queue.",
+      "recommendation_priority": "P3",
+      "recommendation_alternatives": [
+        "Track trend changes rather than scheduling immediate intervention.",
+        "Use periodic scenario checks to detect sensitivity to operating-condition shifts."
+      ],
+      "rationale": "RUL prediction is 123.95 cycles, which maps to `healthy` under the frozen threshold policy. Confidence-band width is 42.57 cycles and contributes to the final risk score.",
+      "safety_notes": [],
+      "model_version": "predictive-layer-v1/rf",
+      "trace": {
+        "dataset_id": "FD001",
+        "feature_schema_version": "v1",
+        "preprocessing_version": "plan1-baseline-v1",
+        "fallback_model": "hgb"
+      },
+      "audit_record_id": "6a57baf8-b39a-437e-b34d-d25125b60e90",
+      "service_status": "ok",
+      "timestamp": "2026-04-18T15:24:20.148693+00:00"
+    },
+    "scenario": {
+      "rul_pred": 123.874,
+      "confidence_band": {
+        "lower": 102.59,
+        "upper": 145.157,
+        "method": "empirical_abs_error_quantiles"
+      },
+      "risk_level": "healthy",
+      "risk_score": 35,
+      "recommendation_text": "Continue operation under normal monitoring while keeping the unit in the routine review queue.",
+      "recommendation_priority": "P3",
+      "recommendation_alternatives": [
+        "Track trend changes rather than scheduling immediate intervention.",
+        "Use periodic scenario checks to detect sensitivity to operating-condition shifts."
+      ],
+      "rationale": "RUL prediction is 123.87 cycles, which maps to `healthy` under the frozen threshold policy. Confidence-band width is 42.57 cycles and contributes to the final risk score.",
+      "safety_notes": [],
+      "model_version": "predictive-layer-v1/rf",
+      "trace": {
+        "dataset_id": "FD001",
+        "feature_schema_version": "v1",
+        "preprocessing_version": "plan1-baseline-v1",
+        "fallback_model": "hgb"
+      },
+      "audit_record_id": "9765e76c-28bb-4001-ac89-4437d47fc3ed",
+      "service_status": "ok",
+      "timestamp": "2026-04-18T15:24:21.114763+00:00"
+    },
+    "service_status": "ok",
+    "timestamp": "2026-04-18T15:24:21.116809+00:00"
+  }
+}

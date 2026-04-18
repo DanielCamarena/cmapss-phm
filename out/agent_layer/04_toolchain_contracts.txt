@@ -1,0 +1,6 @@
+Toolchain contracts
+
+- Agent input validates before predictive-layer invocation.
+- Predictive provider: src.predictive_layer.inference_service.predict_rul
+- Orchestration path: validate -> predict -> risk -> recommend -> audit -> response
+- Scenario path reuses the same predictive and risk contracts on modified payloads.

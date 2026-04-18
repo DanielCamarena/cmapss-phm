@@ -1,0 +1,6 @@
+Agent-layer local smoke
+
+service_status: ok
+risk_level: healthy
+recommendation_priority: P3
+audit_record_id: 4d2e09c5-923b-43eb-9f1c-b4eaff271594

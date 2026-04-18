@@ -1,0 +1,23 @@
+Evaluation protocol
+
+Primary comparison target
+- capped RUL with cap 125
+
+Secondary comparison target
+- uncapped linear RUL
+
+Primary metrics
+- RMSE
+- MAE
+
+Secondary metrics
+- per-subset RMSE and MAE
+- performance by RUL band: early-life, mid-life, late-life
+- latency per inference request
+- robustness under noise and partial missing features
+
+Validation rules
+- Keep splits grouped by `unit_id`
+- Preserve cycle order inside each unit
+- Do not fit scalers or feature transforms on validation or test units
+- Report results separately for FD001, FD002, FD003, and FD004

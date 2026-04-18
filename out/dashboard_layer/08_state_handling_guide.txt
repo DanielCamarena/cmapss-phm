@@ -1,0 +1,8 @@
+State handling guide
+
+- loading: show progress and suppress stale action language
+- ok: show full decision UI
+- fallback: show amber state and preserve trace
+- degraded: show caution styling and surface uncertainty prominently
+- error_validacion: show correction guidance instead of decision content
+- sin_datos: show neutral empty state

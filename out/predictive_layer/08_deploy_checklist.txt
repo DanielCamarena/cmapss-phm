@@ -1,0 +1,7 @@
+Predictive layer deploy checklist
+
+- Conda environment `cmapss` available
+- Processed parquet artifacts present
+- Champion record and confidence-band policy present
+- Model artifacts stored under `out/predictive_layer/models`
+- Smoke test passes

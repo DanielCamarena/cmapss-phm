@@ -1,0 +1,5 @@
+risk_level,recommendation_text,priority
+critical,Schedule immediate inspection and maintenance action before additional cycles are consumed.,P1
+warning,Plan maintenance in the near term and increase monitoring frequency for this unit.,P2
+healthy,Continue operation under normal monitoring while keeping the unit in the routine review queue.,P3
+unknown,Do not act on this request until the predictive input contract is satisfied and a valid forecast is available.,P1

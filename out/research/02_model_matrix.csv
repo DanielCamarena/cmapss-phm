@@ -1,0 +1,6 @@
+model_family,input_shape,strengths,weaknesses,recommended_role,priority
+RandomForestRegressor,row-level tabular,"strong baseline, robust to scaling noise, fast iteration","limited temporal memory, larger model artifacts",baseline,high
+HistGradientBoostingRegressor,row-level tabular,"fast training, competitive baseline, interpretable feature importance",requires handcrafted temporal features or lag summaries,baseline or challenger,high
+LSTM,windowed sequence,captures temporal degradation patterns directly,"higher training cost, more sensitive to window design",primary challenger,high
+GRU or TCN,windowed sequence,sequence modeling with lower runtime or better optimization behavior,more implementation complexity than tabular baselines,primary challenger,high
+Hybrid tabular + sequence ensemble,row-level plus sequence outputs,can combine stable baseline and temporal model,highest orchestration complexity,optional stretch,medium

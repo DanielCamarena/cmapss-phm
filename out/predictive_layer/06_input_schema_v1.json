@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": [
+    "dataset_id",
+    "unit_id",
+    "cycle",
+    "op_settings",
+    "sensors"
+  ],
+  "properties": {
+    "dataset_id": {
+      "type": "string"
+    },
+    "unit_id": {
+      "type": "integer"
+    },
+    "cycle": {
+      "type": "integer"
+    },
+    "op_settings": {
+      "type": "object"
+    },
+    "sensors": {
+      "type": "object"
+    },
+    "source": {
+      "type": "string"
+    }
+  }
+}

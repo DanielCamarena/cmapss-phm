@@ -1,0 +1,6 @@
+Integration contract check
+
+- Dashboard decision flow consumes real agent-layer output successfully.
+- Scenario flow consumes real agent-layer scenario output successfully.
+- Model comparison table reads directly from predictive-layer evaluation artifacts.
+- Trace and service-state fields remain visible without custom post-processing.

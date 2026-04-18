@@ -1,0 +1,8 @@
+Scenario assistant flow
+
+1. Validate base request.
+2. Produce baseline deterministic decision.
+3. Generate a rules-only proposed scenario payload.
+4. Run the same predictive and agent pipeline on the proposed payload.
+5. Compare baseline and scenario outputs and add assumptions/safety notes.
+6. Optionally enrich interpretation text with google-genai if configured.

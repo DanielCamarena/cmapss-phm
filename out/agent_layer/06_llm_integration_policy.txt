@@ -1,0 +1,7 @@
+LLM integration policy
+
+- Provider package: google-genai
+- Secret: GEMINI_API_KEY
+- Default model override target: gemini-2.5-flash
+- LLM output may enrich wording only; it does not replace deterministic risk or recommendation logic.
+- If the provider is unavailable, the system remains in `rules_only` mode.

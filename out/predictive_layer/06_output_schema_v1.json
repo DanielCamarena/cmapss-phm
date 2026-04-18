@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "required": [
+    "rul_pred",
+    "confidence_band",
+    "model_version",
+    "service_status",
+    "trace",
+    "timestamp"
+  ],
+  "properties": {
+    "rul_pred": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "confidence_band": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "model_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "service_status": {
+      "type": "string"
+    },
+    "trace": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "timestamp": {
+      "type": "string"
+    }
+  }
+}

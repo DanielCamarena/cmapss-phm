@@ -1,0 +1,12 @@
+Master plan for the RUL layer
+
+Chosen direction
+- Build one rigorous predictive layer that compares stable tabular baselines with sequence challengers under one controlled preprocessing and evaluation regime.
+
+Why this is the right direction
+- It respects the benchmark's time-dependent degradation process.
+- It keeps a simple baseline for reproducibility and fallback.
+- It addresses the major literature risks: inconsistent preprocessing, weak subset reporting, and unclear target choices.
+
+Immediate next step
+- Execute Plan 3 with baseline tabular models first, then sequence challengers, then champion selection and contract hardening.

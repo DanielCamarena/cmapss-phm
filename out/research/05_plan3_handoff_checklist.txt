@@ -1,0 +1,8 @@
+Plan 3 handoff checklist
+
+- Plan 1 processed parquet artifacts exist and are readable
+- Target policy is frozen: capped RUL 125 primary, raw RUL retained
+- Baseline feature set is frozen for first-pass modeling
+- Grouped unit-based validation is required
+- Output payload must include traceability metadata and service status
+- Per-subset reporting is mandatory

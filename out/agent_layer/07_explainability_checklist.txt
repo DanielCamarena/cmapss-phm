@@ -1,0 +1,6 @@
+Explainability checklist
+
+- Every decision includes rationale.
+- Confidence-band information is preserved from the predictive layer.
+- Fallback and degraded states are visible in service_status.
+- Scenario outputs include assumptions and safety notes.

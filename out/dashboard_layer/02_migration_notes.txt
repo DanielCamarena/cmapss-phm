@@ -1,0 +1,5 @@
+Dashboard migration notes
+
+- Implemented a fresh Streamlit dashboard in src/dashboard_layer/app.py.
+- Backend integration is handled by backend_adapter.py and calls real agent-layer entrypoints.
+- No mock data path is used in the runtime flow.

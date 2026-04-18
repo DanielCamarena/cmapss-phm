@@ -1,0 +1,5 @@
+Dashboard contract integration checklist
+
+- Agent output exposes stable risk and recommendation fields.
+- Scenario mode is optional but deterministic scenario comparison is available.
+- Technical audit fields are present for traceability.

@@ -1,0 +1,6 @@
+Agent layer policy rules
+
+- Preserve upstream predictive `service_status` unless validation fails before prediction.
+- Risk logic is deterministic and threshold-driven.
+- Recommendation text must remain available even when LLM enrichment is disabled.
+- Scenario assistant may enrich language, but not alter deterministic baseline comparisons.

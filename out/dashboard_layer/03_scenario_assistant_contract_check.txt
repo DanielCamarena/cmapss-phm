@@ -1,0 +1,5 @@
+Scenario contract check
+
+- Scenario response includes proposed payload, assumptions, safety notes, comparison, interpretation, and service_status.
+- Current scenario mode: rules_only
+- The UI can render the deterministic path without requiring llm_model_used.

@@ -1,0 +1,13 @@
+Research risks and mitigations
+
+- Risk: complex subsets may favor condition-aware or regime-aware preprocessing.
+Mitigation: require per-subset reporting and compare failures by dataset complexity.
+
+- Risk: a sequence model may outperform globally but be too brittle for integration.
+Mitigation: include service-state rules and keep a tabular fallback.
+
+- Risk: target capping can distort early-life behavior.
+Mitigation: retain raw RUL and run ablation checks on uncapped targets.
+
+- Risk: literature comparisons can be misleading if metric definitions drift.
+Mitigation: freeze metric definitions and report them alongside every model result.

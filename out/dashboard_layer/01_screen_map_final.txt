@@ -1,0 +1,7 @@
+Screen map
+
+- Sidebar: request console and action controls
+- Summary: main decision, service state, rationale
+- Analysis: score, confidence band, alternatives, model comparison, trace
+- Scenarios: baseline vs scenario comparison, assumptions, safety notes
+- Technical Audit: trace, schemas, audit log tail, raw JSON

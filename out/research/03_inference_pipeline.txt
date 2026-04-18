@@ -1,0 +1,16 @@
+Inference pipeline design
+
+1. Validate request schema and required fields.
+2. Normalize payload into canonical CMAPSS column names.
+3. Apply the preprocessing contract learned on the training split only.
+4. Route input through the champion model.
+5. Convert raw prediction into user-facing `rul_pred`.
+6. Attach confidence band from calibration policy.
+7. Emit trace metadata and service status.
+8. Log audit record for downstream technical inspection.
+
+Out-of-distribution handling
+- If feature ranges are outside expected training support, return `degraded` with an OOD note rather than silently treating the prediction as fully reliable.
+
+Fallback behavior
+- If the champion model is unavailable, use the best validated tabular baseline and mark `service_status=fallback`.

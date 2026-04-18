@@ -1,0 +1,14 @@
+Acceptance criteria
+
+Baseline acceptance
+- At least one tabular baseline trains successfully and produces fully traceable predictions.
+- Per-subset metrics are reported for all four datasets.
+
+Champion promotion rules
+- Candidate must improve global RMSE by at least 5% over the best tabular baseline or materially improve per-subset stability.
+- No subset may degrade by more than 10% RMSE relative to the best available baseline without an explicit waiver.
+- Confidence-band generation and structured service status must be implemented.
+- Median single-request inference latency should remain operationally reasonable for local dashboard use.
+
+Release gate
+- End-to-end smoke test from processed input to structured output must pass before agent-layer integration begins.

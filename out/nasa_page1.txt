@@ -1,0 +1,12 @@
+U.S.  ARMY
+RESEARCH LABORATORY
+User’s Guide for the Commercial Modular
+Aero-Propulsion System Simulation (C-MAPSS)
+NASA/TM—2007-215026
+October 2007
+Dean K. Frederick
+Saratoga Control Systems, Inc., Saratoga Springs, New York
+Jonathan A. DeCastro
+ASRC Aerospace Corporation, Cleveland, Ohio
+Jonathan S. Litt
+U.S. Army Research Laboratory, Glenn Research Center, Cleveland, Ohio

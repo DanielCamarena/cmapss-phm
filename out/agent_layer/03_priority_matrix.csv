@@ -1,0 +1,5 @@
+risk_level,priority,alternatives_count
+critical,P1,2
+warning,P2,2
+healthy,P3,2
+unknown,P1,2

@@ -1,0 +1,5 @@
+Technical audit UX rules
+
+- Display audit_record_id, model_version, service_status, timestamp, and trace as primary technical fields.
+- Present schema snapshots and recent audit entries in expandable sections.
+- Current example audit id: 48f5966f-ba19-4682-a8ab-5e05f0dcefbf

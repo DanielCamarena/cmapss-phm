@@ -1,0 +1,65 @@
+{
+  "request": {
+    "dataset_id": "FD001",
+    "unit_id": 1,
+    "cycle": 50,
+    "op_settings": {
+      "op_setting_1": 0.1,
+      "op_setting_2": -0.2
+    },
+    "sensors": {
+      "sensor_2": 0.0,
+      "sensor_3": 0.0,
+      "sensor_4": 0.0,
+      "sensor_7": 0.0,
+      "sensor_8": 0.0,
+      "sensor_9": 0.0,
+      "sensor_11": 0.0,
+      "sensor_12": 0.0,
+      "sensor_13": 0.0,
+      "sensor_14": 0.0,
+      "sensor_15": 0.0,
+      "sensor_17": 0.0,
+      "sensor_20": 0.0,
+      "sensor_21": 0.0
+    },
+    "source": "smoke_test"
+  },
+  "response": {
+    "rul_pred": 123.955,
+    "confidence_band": {
+      "lower": 102.672,
+      "upper": 145.238,
+      "method": "empirical_abs_error_quantiles"
+    },
+    "target_policy": {
+      "name": "rul_capped",
+      "cap": 125
+    },
+    "model_version": "predictive-layer-v1/rf",
+    "service_status": "ok",
+    "trace": {
+      "dataset_id": "FD001",
+      "feature_schema_version": "v1",
+      "preprocessing_version": "plan1-baseline-v1",
+      "fallback_model": "hgb"
+    },
+    "timestamp": "2026-04-18T14:35:36.016055+00:00"
+  },
+  "champion_record": {
+    "champion_model": "rf",
+    "fallback_model": "hgb",
+    "best_tabular_model": "rf",
+    "best_overall_model": "gru",
+    "best_tabular_rmse": 18.31287878112194,
+    "best_overall_rmse": 17.4237621551216,
+    "relative_improvement_vs_tabular": 0.0485514394884159,
+    "stability_spread_rmse": {
+      "hgb": 2.6983995960709386,
+      "rf": 2.6222066840307434,
+      "lstm": 5.994336798013515,
+      "gru": 5.45229071675079
+    },
+    "selection_reason": "Best stable baseline selected for integration readiness."
+  }
+}

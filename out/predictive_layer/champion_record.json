@@ -1,0 +1,16 @@
+{
+  "champion_model": "rf",
+  "fallback_model": "hgb",
+  "best_tabular_model": "rf",
+  "best_overall_model": "gru",
+  "best_tabular_rmse": 18.31287878112194,
+  "best_overall_rmse": 17.4237621551216,
+  "relative_improvement_vs_tabular": 0.0485514394884159,
+  "stability_spread_rmse": {
+    "hgb": 2.6983995960709386,
+    "rf": 2.6222066840307434,
+    "lstm": 5.994336798013515,
+    "gru": 5.45229071675079
+  },
+  "selection_reason": "Best stable baseline selected for integration readiness."
+}

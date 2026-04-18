@@ -1,0 +1,5 @@
+Summary tab design notes
+
+- Large RUL gauge anchors the operator's attention.
+- Risk level, recommendation priority, and service state are surfaced as compact tiles.
+- Immediate action text is shown beside the gauge to reduce scanning time.

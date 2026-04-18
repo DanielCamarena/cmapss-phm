@@ -1,0 +1,5 @@
+Explainability rules
+
+- Rationale must stay visible with every decision result.
+- Confidence-band messaging must not imply false certainty.
+- Scenario interpretation must be labeled as interpretation rather than factual output.

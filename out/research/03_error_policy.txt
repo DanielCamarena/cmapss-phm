@@ -1,0 +1,15 @@
+Error policy
+
+Validation errors
+- Missing identifiers or missing required features: `error_validacion`
+- Empty or non-parsable numeric values: `error_validacion`
+
+Data sufficiency errors
+- No usable history for a sequence model: downgrade to tabular fallback if available, otherwise `sin_datos`
+
+System errors
+- Model artifact unavailable: `fallback` if challenger or baseline exists, otherwise `degraded`
+- Preprocessing schema mismatch: `degraded` and block prediction if feature alignment cannot be trusted
+
+Operator-facing rule
+- Every non-`ok` response must include a short explanation string suitable for dashboard display and a technical reason suitable for audit logs.

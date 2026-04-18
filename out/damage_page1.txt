@@ -1,0 +1,99 @@
+  
+  
+Abstract— This paper  describes how damage propagation 
+can be modeled within the modules of aircraft gas turbine 
+engines. To that end, response surfaces of all sensors are 
+generated via a thermo-dynamical simulation model for the 
+engine as a function of variations of flow and efficiency of the 
+modules of interest. An exponential rate of change for flow and 
+efficiency loss was imposed for each data set, starting at a 
+randomly chosen initial deterioration set point. The rate of 
+change of the flow and efficiency denotes an otherwise 
+unspecified fault with increasingly worsening effect. The rates 
+of change of the faults were constrained to an upper threshold 
+but were otherwise chosen randomly. Damage propagation was 
+allowed to continue until a failure criterion was reached. A 
+health index was defined as the minimum of several 
+superimposed operational margins at any given time instant 
+and the failure criterion is reached when health index reaches 
+zero. Output of the model was the time series (cycles) of sensed 
+measurements typically available from aircraft gas turbine 
+engines. The data generated were used as challenge data for the 
+Prognostics and Health Management (PHM) data competition 
+at PHM’08. 
+ 
+Index Terms —Damage modeling, Prognostics, C-MAPSS, 
+Turbofan engines, Performance Evaluation 
+ 
+CONTENTS 
+I. Introduction………….………………………. 1 
+II. Prognostics………….…………………..…… 1 
+III. System Model……………………..…………. 2 
+IV. Damage Propagation Modeling……….……... 4 
+V. Application Scenario …………………….…... 5 
+VI. Competition Data…………………………..… 7 
+VII. Performance Evaluation…………………..….. 7 
+VIII. Conclusions…………………………………... 8 
+ Acknowledgements……………………….….. 8 
+ References………………………………….… 9 
+ 
+Manuscript received May 18, 2008. This work was supported in part by 
+the U.S. National Aeronautics and Space Administration (NASA) under the 
+Integrated Vehicle Health Management (IVHM) program.  
+Abhinav Saxena, is with Research Institute for Advanced Computer 
+Science at NASA Ames Research Center, Moffett Field, CA 94035 USA 
+(Phone: 650-604-3208; fax: 650-604-4036; e-mail: 
+asaxena@mail.arc.nasa.gov).  
+Kai Goebel is with NASA Ames Research Center, Moffett Field, CA 
+94035 USA. 
+Don Simon is with NASA Glenn Research Center, Cleveland, OH, 
+44135 USA. 
+Neil Eklund is with GE Global Research, Niskayuna, NY 12309 
+I. INTRODUCTION 
+ata-driven prognostics faces the perennial challenge of 
+the lack of run-to-failure data sets. In most cases real-
+world data contain fault signatures for a growing fault but no 
+or little data capture fault evolution until failure.  Procuring 
+actual system fault progression data is typically time 
+consuming and expensive. Fielded systems are, most of the 
+time, not properly instrumented for collection of relevant 
+data. Those fortunate enough to be able to collect long-term 
+data for fleets of systems tend to – understandably – hold the 
+data from public release for proprietary or competitive 
+reasons. Few public data repositories (e.g., [1]) exist that 
+make run-to-failure data available. The lack of common data 
+sets, which researchers can use to compare their approaches, 
+is impeding progress in the field of prognostics. While 
+several forecasting competitions have been held in the past 
+(e.g., [2-7]), none have been conducted with a PHM-centric 
+focus. All this provided the motivation to conduct the first 
+PHM data challenge. The task was to estimate remaining life 
+of an unspecified system using historical data only, 
+irrespective of the underlying physical process.  
+For most complex systems like aircraft engines, finding a 
+suitable model that allows the injection of health related 
+changes certainly is a challenge in itself. In addition, the 
+question of how the damage propagation should be modeled 
+within a model needed to be addressed. Secondary issues 
+revolved around how this propagation would be manifested 
+in sensor signatures such that users could build meaningful 
+prognostic solutions.  
+In this paper we first define the prognostics problem to set 
+the context. Then the following sections introduce the 
+simulation model chosen, along with a brief review of health 
+parameter modeling. This is followed by a description of the 
+damage propagation modeling, a description of the 
+competition data, and a discussion on performance 
+evaluation. 
+II. P
+ROGNOSTICS 
+To avoid confusion, we define prognostics here 
+exclusively as the estimation of remaining useful component 
+life. The remaining useful life (RUL) estimates are in units 
+of time (e.g., hours or cycles). End-of-life can be 
+subjectively determined as a function of operational 
+Damage Propagation Modeling for Aircraft 
+Engine Run-to-Failure Simulation 
+Abhinav Saxena, Member IEEE, Kai Goebel,  
+Don Simon, Member, IEEE, Neil Eklund, Member IEEE 
+D

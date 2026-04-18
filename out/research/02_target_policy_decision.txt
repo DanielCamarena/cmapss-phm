@@ -1,0 +1,15 @@
+Target policy decision
+
+Primary target
+- `rul_capped` with cap `125`
+
+Why this is the default
+- Plan 1 showed the need to avoid long early-life trajectories dominating optimization.
+- The damage-propagation benchmark is still a cycle-to-failure problem, so capped RUL remains consistent with the intended task while improving optimization balance.
+- The literature review warns that inconsistent target definitions make CMAPSS comparisons unreliable; using one explicit default resolves that risk.
+
+Secondary target
+- `rul_linear` uncapped
+
+How to use it
+- Keep uncapped RUL in stored artifacts and use it for ablations, calibration review, and technical audit outputs.

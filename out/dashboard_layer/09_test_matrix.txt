@@ -1,0 +1,8 @@
+Dashboard test matrix
+
+- valid decision request
+- valid scenario request
+- invalid payload triggering error_validacion
+- predictive fallback rendering
+- predictive degraded rendering
+- rules_only scenario rendering without LLM

@@ -1,0 +1,24 @@
+Predictive problem definition
+
+Task
+- Predict remaining useful life in cycles for a given engine trajectory from CMAPSS sensor and operational-setting data.
+
+Prediction unit
+- Primary unit: row-level or window-level observations tied to `dataset_id`, `unit_id`, and `cycle`.
+- Business-facing unit: latest known state of one engine trajectory for downstream risk and recommendation layers.
+
+Required inputs
+- `dataset_id`
+- `unit_id`
+- `cycle`
+- operational settings: `op_setting_1`, `op_setting_2`, `op_setting_3`
+- retained baseline features from Plan 1: op_setting_1, op_setting_2, sensor_2, sensor_3, sensor_4, sensor_7, sensor_8, sensor_9, sensor_11, sensor_12, sensor_13, sensor_14, sensor_15, sensor_17, sensor_20, sensor_21
+
+Recommended target policy
+- Default supervised target: `rul_capped` with cap `125`
+- Audit target retained in storage: uncapped raw `rul`
+
+Known benchmark difficulty drivers
+- FD002 and FD004 combine multiple operating conditions.
+- FD003 and FD004 contain multiple fault modes.
+- Sensor noise and long early-life trajectories can skew optimization if uncapped targets dominate training.

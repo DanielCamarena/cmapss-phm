@@ -1,0 +1,22 @@
+Proposed predictive methodology
+
+Primary direction
+- Use a contract-first predictive layer with one tabular baseline track and one sequence-model track.
+- Start from the Plan 1 processed artifacts and preserve raw identifiers for traceability.
+
+Feature policy
+- Keep the Plan 1 retained feature set as the default modeling input: op_setting_1, op_setting_2, sensor_2, sensor_3, sensor_4, sensor_7, sensor_8, sensor_9, sensor_11, sensor_12, sensor_13, sensor_14, sensor_15, sensor_17, sensor_20, sensor_21.
+- Do not permanently ban removed features (op_setting_3, sensor_1, sensor_10, sensor_16, sensor_18, sensor_19, sensor_5, sensor_6); treat them as excluded from the baseline only.
+
+Target policy
+- Optimize primarily on capped RUL with cap 125.
+- Retain raw uncapped RUL for ablation, calibration, and audit.
+
+Candidate model strategy
+- Baseline: HistGradientBoostingRegressor and RandomForestRegressor on engineered row-level features.
+- Sequence challengers: LSTM and GRU or TCN using 30-step and 50-step windows from Plan 1.
+- Optional ensemble only after one sequence model and one tabular model are stable and comparable.
+
+Selection philosophy
+- Choose the champion using both predictive quality and integration readiness.
+- Favor models that maintain stable per-subset performance over models that only optimize one global score.

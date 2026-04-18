@@ -1,0 +1,10 @@
+Frozen modeling decisions
+
+- Primary target: rul_capped with cap 125
+- Secondary audit target: rul_linear
+- Baseline features: op_setting_1, op_setting_2, sensor_2, sensor_3, sensor_4, sensor_7, sensor_8, sensor_9, sensor_11, sensor_12, sensor_13, sensor_14, sensor_15, sensor_17, sensor_20, sensor_21
+- Removed baseline-only features: op_setting_3, sensor_1, sensor_10, sensor_16, sensor_18, sensor_19, sensor_5, sensor_6
+- Baseline models: HistGradientBoostingRegressor, RandomForestRegressor
+- Sequence challengers: LSTM, GRU
+- Window sizes: [30, 50]
+- Validation policy: grouped by unit_id with cycle order preserved

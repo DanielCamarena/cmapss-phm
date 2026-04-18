@@ -1,0 +1,6 @@
+Risk scoring design
+
+- Base level is determined by RUL thresholds: critical <=20, warning <=60, healthy >60.
+- Confidence-band width can increase the risk score conservatively.
+- Upstream fallback or degraded predictive states increase the risk score conservatively.
+- Missing valid RUL yields `unknown` risk and forces a validation-first recommendation path.

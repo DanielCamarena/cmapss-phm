@@ -1,0 +1,10 @@
+{
+  "champion_model": "rf",
+  "method": "empirical_abs_error_quantiles",
+  "quantiles": {
+    "p50_abs_error": 8.981846828785166,
+    "p80_abs_error": 21.28332972781354,
+    "p90_abs_error": 31.0679982059133
+  },
+  "default_interval": "p80_abs_error"
+}

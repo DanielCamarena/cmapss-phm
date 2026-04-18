@@ -1,0 +1,21 @@
+{
+  "rul_pred": 123.955,
+  "confidence_band": {
+    "lower": 102.672,
+    "upper": 145.238,
+    "method": "empirical_abs_error_quantiles"
+  },
+  "target_policy": {
+    "name": "rul_capped",
+    "cap": 125
+  },
+  "model_version": "predictive-layer-v1/rf",
+  "service_status": "ok",
+  "trace": {
+    "dataset_id": "FD001",
+    "feature_schema_version": "v1",
+    "preprocessing_version": "plan1-baseline-v1",
+    "fallback_model": "hgb"
+  },
+  "timestamp": "2026-04-18T14:35:37.133278+00:00"
+}

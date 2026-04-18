@@ -1,0 +1,36 @@
+{
+  "model_name": "gru",
+  "model_class": "GRURegressor",
+  "fit_seconds": 209.99167349998606,
+  "inference_seconds_valid": 1.3186338000232354,
+  "ms_per_sample_valid": 0.05210137895702064,
+  "train_windows": 100309,
+  "valid_windows": 25309,
+  "window_size": 50,
+  "features": [
+    "op_setting_1",
+    "op_setting_2",
+    "sensor_2",
+    "sensor_3",
+    "sensor_4",
+    "sensor_7",
+    "sensor_8",
+    "sensor_9",
+    "sensor_11",
+    "sensor_12",
+    "sensor_13",
+    "sensor_14",
+    "sensor_15",
+    "sensor_17",
+    "sensor_20",
+    "sensor_21"
+  ],
+  "target_cap": 125,
+  "params": {
+    "hidden_size": 32,
+    "epochs": 4,
+    "batch_size": 128,
+    "lr": 0.0015,
+    "window_size": 50
+  }
+}

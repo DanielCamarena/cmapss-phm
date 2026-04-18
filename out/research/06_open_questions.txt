@@ -1,0 +1,6 @@
+Open questions
+
+- Should operating conditions be normalized globally or by inferred regime for FD002 and FD004?
+- Which sequence architecture offers the best quality-to-complexity trade-off in this repository: LSTM, GRU, or TCN?
+- Is the optional PHM scoring metric needed for stakeholder comparison, or are RMSE and MAE sufficient for the first release?
+- Should confidence bands be derived empirically from residuals or from model ensembles?

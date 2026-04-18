@@ -1,0 +1,5 @@
+Analysis tab design notes
+
+- Focus on diagnostics already supported by contracts: risk_score, confidence_band, alternatives, trace.
+- Model comparison is shown from predictive-layer evaluation artifacts rather than invented fleet analytics.
+- Audit detail is visible but kept separate from the operator summary flow.

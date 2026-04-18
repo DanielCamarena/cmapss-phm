@@ -1,0 +1,7 @@
+Failure modes
+
+- Invalid request payload
+- Predictive layer validation failure
+- Predictive champion unavailable and fallback used
+- LLM secret missing or provider call failure
+- Scenario payload outside intended safe perturbation bounds

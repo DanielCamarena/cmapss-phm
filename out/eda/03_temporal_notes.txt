@@ -1,0 +1,4 @@
+FD001: train units=100, test units=100, train length mean=206.3, train length std=46.3, sampled units=[69, 68, 39]
+FD002: train units=260, test units=259, train length mean=206.8, train length std=46.8, sampled units=[112, 54, 244]
+FD003: train units=100, test units=100, train length mean=247.2, train length std=86.5, sampled units=[55, 21, 99]
+FD004: train units=249, test units=248, train length mean=246.0, train length std=73.1, sampled units=[118, 147, 214]

@@ -1,0 +1,16 @@
+Cross-source synthesis
+
+Common agreements
+- CMAPSS is a valid benchmark for data-driven RUL development when the task is framed as cycle-based degradation forecasting.
+- Operating conditions and degradation dynamics materially affect sensor behavior and must influence preprocessing and evaluation.
+- Benchmark comparisons are only useful when target policy, preprocessing, and metrics are explicitly documented.
+
+Main cautions
+- The data are simulated, so benchmark success does not equal field-readiness.
+- Complex subsets with multiple conditions or multiple fault modes require stronger robustness checks than single-condition subsets.
+- Reported gains can be misleading when papers use inconsistent target capping or hidden preprocessing differences.
+
+Direct link to Plan 1 outputs
+- Target policy from Plan 1: capped RUL at 125 as default, with uncapped raw RUL preserved.
+- Preprocessing from Plan 1: train-only `StandardScaler`, reduced feature set, leakage-safe unit-based split.
+- Risks from Plan 1: multi-condition normalization, sensitivity to feature removal, and the need for grouped cross-validation in later model comparison.

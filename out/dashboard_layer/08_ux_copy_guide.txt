@@ -1,0 +1,5 @@
+UX copy guide
+
+- Use direct operational language for recommendations.
+- Use plain caution language for fallback and degraded states.
+- Keep technical vocabulary in the Technical Audit tab instead of the operator summary view.

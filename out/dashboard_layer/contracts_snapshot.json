@@ -1,0 +1,97 @@
+{
+  "predictive_schema": {
+    "type": "object",
+    "required": [
+      "rul_pred",
+      "confidence_band",
+      "model_version",
+      "service_status",
+      "trace",
+      "timestamp"
+    ],
+    "properties": {
+      "rul_pred": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "confidence_band": {
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "model_version": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "service_status": {
+        "type": "string"
+      },
+      "trace": {
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "timestamp": {
+        "type": "string"
+      }
+    }
+  },
+  "agent_input_schema": {
+    "type": "object",
+    "required": [
+      "dataset_id",
+      "unit_id",
+      "cycle",
+      "op_settings",
+      "sensors"
+    ],
+    "properties": {
+      "dataset_id": {
+        "type": "string"
+      },
+      "unit_id": {
+        "type": "integer"
+      },
+      "cycle": {
+        "type": "integer"
+      },
+      "op_settings": {
+        "type": "object"
+      },
+      "sensors": {
+        "type": "object"
+      },
+      "source": {
+        "type": "string"
+      },
+      "operator_note": {
+        "type": "string"
+      },
+      "request_context": {
+        "type": "object"
+      }
+    }
+  },
+  "agent_output_schema": {
+    "type": "object",
+    "required": [
+      "rul_pred",
+      "confidence_band",
+      "risk_level",
+      "risk_score",
+      "recommendation_text",
+      "recommendation_priority",
+      "recommendation_alternatives",
+      "rationale",
+      "audit_record_id",
+      "service_status",
+      "timestamp"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+Robustness test plan
+
+1. Add controlled Gaussian noise to selected sensor channels.
+2. Mask small subsets of sensor values to simulate partial missing input.
+3. Compare simple subsets (FD001, FD003) versus multi-condition subsets (FD002, FD004).
+4. Compare performance by RUL bands to detect late-life instability.
+5. Record whether fallback predictions remain within acceptable error envelopes.

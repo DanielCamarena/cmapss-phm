@@ -1,0 +1,13 @@
+Metric definitions
+
+RMSE
+- Main optimization metric for champion selection because large late-life misses should be penalized.
+
+MAE
+- Secondary stability metric because it is easier to interpret in cycles.
+
+Subset stability
+- Difference between best and worst subset RMSE should be monitored explicitly to prevent one-model-overfits-one-subset decisions.
+
+Optional PHM score
+- Include for comparability with benchmark literature if implemented consistently and documented clearly.

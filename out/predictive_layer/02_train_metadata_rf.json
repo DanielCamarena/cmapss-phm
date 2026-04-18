@@ -1,0 +1,33 @@
+{
+  "model_name": "rf",
+  "model_class": "RandomForestRegressor",
+  "fit_seconds": 68.20411220000824,
+  "train_rows": 128092,
+  "valid_rows": 32267,
+  "features": [
+    "op_setting_1",
+    "op_setting_2",
+    "sensor_2",
+    "sensor_3",
+    "sensor_4",
+    "sensor_7",
+    "sensor_8",
+    "sensor_9",
+    "sensor_11",
+    "sensor_12",
+    "sensor_13",
+    "sensor_14",
+    "sensor_15",
+    "sensor_17",
+    "sensor_20",
+    "sensor_21"
+  ],
+  "target_cap": 125,
+  "params": {
+    "n_estimators": 160,
+    "max_depth": 18,
+    "min_samples_leaf": 4,
+    "n_jobs": -1,
+    "random_state": 42
+  }
+}

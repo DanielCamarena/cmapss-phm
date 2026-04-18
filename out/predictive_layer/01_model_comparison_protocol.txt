@@ -1,0 +1,7 @@
+Model comparison protocol
+
+- Compare all models on capped validation targets.
+- Report RMSE and MAE globally and by dataset.
+- Report error by RUL band.
+- Record single-request latency.
+- Promote a non-tabular champion only if it clears the Plan 2 improvement or stability rule.

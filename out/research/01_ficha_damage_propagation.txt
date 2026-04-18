@@ -1,0 +1,21 @@
+Source note: Damage Propagation Modeling for Aircraft Engine Run-to-Failure Simulation
+File: doc/Damage Propagation Modeling.pdf
+Pages extracted: 9
+
+Purpose
+- Explain how degradation was injected into the turbofan simulation used to generate run-to-failure data.
+
+Key technical takeaways
+- The benchmark faults are simulated via deterioration of module flow and efficiency, with damage growth imposed over time.
+- Failure is related to a health-index style operational margin criterion rather than a direct observed sensor threshold.
+- Fault growth is progressive and suitable for RUL framing, but the benchmark remains a synthetic approximation of real maintenance conditions.
+- The paper positions the task clearly as remaining useful life estimation in cycles.
+
+Implications for Plan 3
+- Sequence-aware models are well motivated because degradation accumulates over time rather than appearing as independent static samples.
+- Calibration and uncertainty reporting matter because the benchmark labels reflect simulated failure progression, not direct physical failure measurements from field assets.
+- Robustness testing should include partial missing data and operating-condition shifts because the generation process couples degradation with complex sensor responses.
+
+Connection to Plan 1
+- Plan 1 selected capped RUL with raw target retention. That is compatible with the benchmark's progressive-failure framing while avoiding early-life domination during optimization.
+- The exported processed artifacts should retain raw identifiers so later evaluation can remain traceable to the simulated run-to-failure trajectories.

@@ -1,0 +1,7 @@
+Dashboard local smoke
+
+Decision state: ok
+Scenario state: ok
+Decision risk level: healthy
+Scenario delta RUL: -0.081
+Model comparison rows: 4

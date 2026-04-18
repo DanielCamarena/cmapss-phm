@@ -1,0 +1,37 @@
+NASA C-MAPSS schema
+
+Parsing rule: whitespace-separated text with trailing empty fields dropped.
+Total modeled columns: 26
+
+Columns:
+01. unit_id
+02. cycle
+03. op_setting_1
+04. op_setting_2
+05. op_setting_3
+06. sensor_1
+07. sensor_2
+08. sensor_3
+09. sensor_4
+10. sensor_5
+11. sensor_6
+12. sensor_7
+13. sensor_8
+14. sensor_9
+15. sensor_10
+16. sensor_11
+17. sensor_12
+18. sensor_13
+19. sensor_14
+20. sensor_15
+21. sensor_16
+22. sensor_17
+23. sensor_18
+24. sensor_19
+25. sensor_20
+26. sensor_21
+
+Notes:
+- unit_id and cycle are identifiers used for grouping and ordering.
+- op_setting_1..3 represent operating condition variables.
+- sensor_1..21 represent the measured sensor channels retained in the benchmark.

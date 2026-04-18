@@ -1,0 +1,7 @@
+Acceptance checklist
+
+- Four required tabs exist
+- Backend adapter uses real agent-layer entrypoints
+- Service states are surfaced in the UI
+- Technical audit includes traceability fields
+- Scenario flow renders deterministic outputs cleanly

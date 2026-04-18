@@ -1,0 +1,6 @@
+Scenario assistant policy
+
+- LLM available in current environment: False
+- Deterministic scenario generation is mandatory.
+- Safety notes and assumptions must always be present.
+- Enrichment failures must not change scenario comparison values.

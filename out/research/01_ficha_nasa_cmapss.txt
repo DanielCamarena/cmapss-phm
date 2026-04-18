@@ -1,0 +1,21 @@
+Source note: NASA C-MAPSS user guide
+File: doc/NASA_CMAPSS.pdf
+Pages extracted: 47
+
+Purpose
+- Describe the simulator structure, configuration space, and generated variables used to build the benchmark.
+
+Key technical takeaways
+- C-MAPSS is a turbofan simulation benchmark intended to emulate engine behavior under varying flight and health conditions.
+- The data structure aligns with the benchmark format observed in Plan 1: unit trajectories over cycles, three operational settings, and twenty-one retained sensors.
+- The guide emphasizes simulation realism and modularity rather than direct field deployment assumptions, so any predictive system should treat benchmark performance as internal validation rather than production equivalence.
+- Multi-condition behavior matters operationally; this supports Plan 1's warning that FD002 and FD004 may need condition-aware normalization.
+
+Implications for Plan 3
+- Preserve `dataset_id`, `unit_id`, and `cycle` through preprocessing and inference.
+- Keep operational settings as first-class inputs instead of treating them as metadata only.
+- Avoid assuming one global sensor distribution across all subsets without explicit validation.
+
+Connection to Plan 1
+- Plan 1 confirmed consistent parsing across all subsets and identified a reduced baseline feature set after low-variance filtering.
+- The simulator documentation supports keeping operating-condition information in the predictive contract because it materially changes the signal context.

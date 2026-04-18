@@ -1,0 +1,5 @@
+Local smoke report
+
+Decision service_status: ok
+Scenario service_status: ok
+Decision model_version: predictive-layer-v1/rf

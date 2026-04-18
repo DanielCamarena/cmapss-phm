@@ -1,0 +1,8 @@
+Predictive layer smoke test
+
+Champion model: rf
+Fallback model: hgb
+Request payload keys: ['dataset_id', 'unit_id', 'cycle', 'op_settings', 'sensors', 'source']
+Response service status: ok
+Response model version: predictive-layer-v1/rf
+Response rul_pred: 123.955

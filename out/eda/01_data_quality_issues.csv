@@ -1,0 +1,29 @@
+dataset_id,split,check,status,details
+FD001,train,column_count_equals_26,ok,observed=26 expected=26
+FD001,train,missing_values,ok,missing_total=0
+FD001,train,duplicate_rows,ok,duplicate_rows=0
+FD001,test,column_count_equals_26,ok,observed=26 expected=26
+FD001,test,missing_values,ok,missing_total=0
+FD001,test,duplicate_rows,ok,duplicate_rows=0
+FD001,test,rul_count_matches_test_units,ok,test_units=100 rul_rows=100
+FD002,train,column_count_equals_26,ok,observed=26 expected=26
+FD002,train,missing_values,ok,missing_total=0
+FD002,train,duplicate_rows,ok,duplicate_rows=0
+FD002,test,column_count_equals_26,ok,observed=26 expected=26
+FD002,test,missing_values,ok,missing_total=0
+FD002,test,duplicate_rows,ok,duplicate_rows=0
+FD002,test,rul_count_matches_test_units,ok,test_units=259 rul_rows=259
+FD003,train,column_count_equals_26,ok,observed=26 expected=26
+FD003,train,missing_values,ok,missing_total=0
+FD003,train,duplicate_rows,ok,duplicate_rows=0
+FD003,test,column_count_equals_26,ok,observed=26 expected=26
+FD003,test,missing_values,ok,missing_total=0
+FD003,test,duplicate_rows,ok,duplicate_rows=0
+FD003,test,rul_count_matches_test_units,ok,test_units=100 rul_rows=100
+FD004,train,column_count_equals_26,ok,observed=26 expected=26
+FD004,train,missing_values,ok,missing_total=0
+FD004,train,duplicate_rows,ok,duplicate_rows=0
+FD004,test,column_count_equals_26,ok,observed=26 expected=26
+FD004,test,missing_values,ok,missing_total=0
+FD004,test,duplicate_rows,ok,duplicate_rows=0
+FD004,test,rul_count_matches_test_units,ok,test_units=248 rul_rows=248

@@ -1,0 +1,7 @@
+Leakage-safe split strategy
+
+Split unit: unit_id within each dataset_id.
+Validation allocation: last 20% of sorted unit IDs within each subset, minimum one unit.
+Ordering rule: cycle order preserved within each unit trajectory.
+Scaler fit: train split only.
+Sequence windows are not materialized in Plan 1 exports; only the documented policy is defined here.

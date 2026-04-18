@@ -1,0 +1,6 @@
+Recommendation templates
+
+- critical: Schedule immediate inspection and maintenance action before additional cycles are consumed.
+- warning: Plan maintenance in the near term and increase monitoring frequency for this unit.
+- healthy: Continue operation under normal monitoring while keeping the unit in the routine review queue.
+- unknown: Do not act on this request until the predictive input contract is satisfied and a valid forecast is available.

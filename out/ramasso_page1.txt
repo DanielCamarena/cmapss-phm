@@ -1,0 +1,81 @@
+Review and Analysis of Algorithmic Approaches Developed for
+Prognostics on CMAPSS Dataset
+Emmanuel Ramasso1 and Abhinav Saxena2
+1 FEMTO-ST Institute, Dep. AS2M/DMA, UMR CNRS 6174 - UFC / ENSMM / UTBM, 25000 Besanc ¸on, France
+emmanuel.ramasso@femto-st.fr
+2 SGT Inc., NASA Ames Research Center, Intelligent Systems Division, Moffett Field, CA, 94035-1000, USA
+abhinav.saxena@nasa.gov
+ABSTRACT
+Benchmarking of prognostic algorithms has been challeng-
+ing due to limited availability of common datasets suit-
+able for prognostics. In an attempt to alleviate this prob-
+lem, several benchmarking datasets have been collected by
+NASA’s prognostic center of excellence and made available
+to the Prognostics and Health Management (PHM) commu-
+nity to allow evaluation and comparison of prognostics algo-
+rithms. Among those datasets are ﬁve C-MAPSS datasets that
+have been extremely popular due to their unique characteris-
+tics making them suitable for prognostics. The C-MAPSS
+datasets pose several challenges that have been tackled by
+different methods in the PHM literature. In particular, man-
+agement of high variability due to sensor noise, effects of
+operating conditions, and presence of multiple simultaneous
+fault modes are some factors that have great impact on the
+generalization capabilities of prognostics algorithms. More
+than 70 publications have used the C-MAPSS datasets for de-
+veloping data-driven prognostic algorithms. The C-MAPSS
+datasets are also shown to be well-suited for development of
+new machine learning and pattern recognition tools for sev-
+eral key preprocessing steps such as feature extraction and
+selection, failure mode assessment, operating conditions as-
+sessment, health status estimation, uncertainty management,
+and prognostics performance evaluation. This paper summa-
+rizes a comprehensive literature review of publications using
+C-MAPSS datasets and provides guidelines and references to
+further usage of these datasets in a manner that allows clear
+and consistent comparison between different approaches.
+1. I NTRODUCTION
+In the past decade, the science of prognostics has fairly ma-
+tured and the general understanding of health prediction prob-
+Emmanuel Ramasso et al. This is an open-access article distributed under the
+terms of the Creative Commons Attribution 3.0 United States License, which
+permits unrestricted use, distribution, and reproduction in any medium, pro-
+vided the original author and source are credited.
+lem and its applications has greatly improved. Both data-
+driven and physics based methods have been shown to pos-
+sess unique advantages that are speciﬁc to application con-
+texts. However, until very recently, a common bottleneck in
+development of data-driven methods was the lack of availabil-
+ity of run-to-failure data sets. In most real-world cases, data
+contain fault signatures for a growing fault at various sever-
+ity levels but no or little data capture fault evolution all the
+way through failure. Procuring actual system fault progres-
+sion data is typically time consuming and expensive. Fielded
+systems are, most of the time, not properly instrumented for
+collection of relevant data or are unable to distribute such data
+due to proprietary constraints. The lack of common data sets,
+which researchers can use to compare their approaches, has
+been an impediment to progress in the ﬁeld of prognostics. To
+tackle this problem, a prognostics data repository was estab-
+lished (Saxena & Goebel, 2008). Several datasets have been
+since published that have been used by researchers around the
+world. Among these datasets are ﬁve datasets from a turbo-
+fan engine simulation model - C-MAPSS (Commercial Mod-
+ular Aero-Propulsion System Simulation) (Frederick, DeCas-
+tro, & Litt, 2007). By simulating a variety of operational
+conditions and injecting faults of varying degree of degra-
+dation, datasets were generated for prognostics development
+(Saxena, Goebel, Simon, & Eklund, 2008a). One of the
+ﬁrst datasets was used for a prognostics data challenge at
+the PHM’08 conference. A subsequent set was then released
+later with varying degrees of complexity. These datasets have
+since been used very widely in publications for benchmarking
+prognostics algorithms.
+The turbofan degradation datasets have received over seven
+thousand unique downloads in the last ﬁve years but algo-
+rithms developed using these have been published in only
+about seventy publications. Furthermore, in many publica-
+tions it is not clear how authors are computing results and
+comparing with others. There has been a confusion and in-
+consistency in how these datasets have been interpreted and
+1

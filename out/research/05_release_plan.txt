@@ -1,0 +1,16 @@
+Release plan
+
+MVP
+- One trained baseline model
+- Reproducible preprocessing
+- One inference service returning structured RUL output
+
+V1
+- Champion versus challenger comparison
+- Confidence band policy
+- Dashboard-consumable service states
+
+V2
+- Robustness hardening
+- Better calibration and monitoring
+- Optional ensemble or advanced sequence architecture

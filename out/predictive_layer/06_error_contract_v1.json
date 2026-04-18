@@ -1,0 +1,14 @@
+{
+  "error_validacion": {
+    "meaning": "missing required fields or non-parsable feature values"
+  },
+  "fallback": {
+    "meaning": "primary champion unavailable or insufficiently usable"
+  },
+  "degraded": {
+    "meaning": "prediction delivered with reduced confidence or partial guarantees"
+  },
+  "sin_datos": {
+    "meaning": "insufficient data to run the requested inference mode"
+  }
+}

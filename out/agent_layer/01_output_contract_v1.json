@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "required": [
+    "rul_pred",
+    "confidence_band",
+    "risk_level",
+    "risk_score",
+    "recommendation_text",
+    "recommendation_priority",
+    "recommendation_alternatives",
+    "rationale",
+    "audit_record_id",
+    "service_status",
+    "timestamp"
+  ]
+}

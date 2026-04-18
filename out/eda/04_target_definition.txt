@@ -1,0 +1,10 @@
+Target strategy recommendation
+
+Primary recommendation: use a capped RUL target with cap=125 for baseline experiments.
+Rationale: it reduces the dominance of very early-life samples while preserving late-life sensitivity.
+Secondary target: keep uncapped linear RUL for ablation and calibration analysis.
+
+Downstream guidance:
+- Report metrics for both uncapped and capped targets when comparing models.
+- Keep the cap configurable in preprocessing, defaulting to 125.
+- Preserve raw RUL in exported processed datasets for auditability.

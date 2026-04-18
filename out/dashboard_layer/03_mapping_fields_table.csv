@@ -1,0 +1,12 @@
+dashboard_tab,field_name,source_layer
+Summary,rul_pred,agent/predictive
+Summary,risk_level,agent
+Summary,recommendation_text,agent
+Analysis,risk_score,agent
+Analysis,confidence_band,predictive
+Analysis,trace,predictive
+Scenarios,comparison,agent scenario
+Scenarios,change_summary,agent scenario
+Technical Audit,audit_record_id,agent
+Technical Audit,model_version,predictive
+Technical Audit,service_status,agent/predictive

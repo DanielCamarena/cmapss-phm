@@ -1,0 +1,7 @@
+Fallback policy
+
+Primary champion: rf
+Fallback model: hgb
+- Use the fallback when the champion artifact is unavailable, when a sequence champion lacks sufficient history, or when validation fails for required champion inputs.
+- Preserve `service_status=fallback` and include the original failure reason in the response audit trace.
+- Validation split composition by complexity: {'complex': 22833, 'simple': 9434}

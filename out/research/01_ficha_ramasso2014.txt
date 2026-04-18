@@ -1,0 +1,21 @@
+Source note: Review and Analysis of Algorithmic Approaches Developed for Prognostics on CMAPSS Dataset
+File: doc/Ramasso2014.pdf
+Pages extracted: 11
+
+Purpose
+- Summarize how the PHM literature has used CMAPSS and what methodological pitfalls appear repeatedly.
+
+Key technical takeaways
+- The survey highlights several recurring difficulty sources: sensor noise, operating-condition variability, and multiple simultaneous fault modes.
+- Preprocessing, feature selection, condition handling, uncertainty management, and evaluation consistency are all major determinants of benchmark performance.
+- The literature review argues for clearer and more consistent comparison rules across publications, especially around dataset interpretation and metric reporting.
+- CMAPSS is useful not only for prediction models but also for testing feature extraction, feature selection, health assessment, and uncertainty workflows.
+
+Implications for Plan 3
+- Compare candidate models under one consistent preprocessing and evaluation regime.
+- Report per-subset performance instead of only one global score.
+- Preserve a tabular baseline even if a sequence model is expected to win, because literature comparisons are often confounded by inconsistent baselines.
+
+Connection to Plan 1
+- Plan 1's documented risks around condition-aware normalization, feature pruning, and capped targets map directly to the survey's warnings about preprocessing sensitivity and evaluation inconsistency.
+- The reduced feature list and proposed 30/50-step windows provide a grounded baseline rather than arbitrary modeling choices.

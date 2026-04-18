@@ -1,18 +1,21 @@
 name: cmapss
 channels:
   - conda-forge
+  - pytorch
 dependencies:
   - python=3.11
+  - pip
   - numpy
   - pandas
-  - scipy
+  - pyarrow
   - matplotlib
   - scikit-learn
   - joblib
-  - openpyxl
-  - pyarrow
-  - streamlit
   - plotly
-  - pip
+  - streamlit
+  - pypdf
+  - pytorch
+  - cpuonly
+  - intel-openmp
   - pip:
-      - google-genai==1.47.0
+      - google-genai

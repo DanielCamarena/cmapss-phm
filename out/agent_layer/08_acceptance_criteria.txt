@@ -1,0 +1,7 @@
+Acceptance criteria
+
+- Valid requests produce deterministic risk and recommendation outputs.
+- Invalid requests fail with structured validation status.
+- Scenario assistant works in deterministic mode with assumptions and safety notes.
+- Audit log entries are written for both baseline and scenario flows.
+- Dashboard mapping fields are fully available from agent outputs.
