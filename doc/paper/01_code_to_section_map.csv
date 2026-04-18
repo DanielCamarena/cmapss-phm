@@ -1,0 +1,38 @@
+section,subsection,module_or_artifact,role
+Introduction,Contributions,README.md,High-level system framing
+Related Work,Source synthesis,out/research/01_cross_source_notes.txt,Literature notes
+Methodology,Dataset and preprocessing,src/eda/run_plan1_eda.py,Data cleaning and preprocessing generation
+Methodology,Dataset and preprocessing,out/eda/05_preprocessing_config.json,Selected features and preprocessing policy
+Methodology,Target definition,out/eda/04_target_definition.txt,Capped-RUL target policy
+Methodology,Predictive modeling,src/predictive_layer/train_rf.py,Random Forest implementation
+Methodology,Predictive modeling,src/predictive_layer/train_hgb.py,Histogram Gradient Boosting implementation
+Methodology,Predictive modeling,src/predictive_layer/train_lstm.py,LSTM baseline implementation
+Methodology,Predictive modeling,src/predictive_layer/train_gru_or_tcn.py,GRU/TCN sequence implementation
+Methodology,Champion selection,src/predictive_layer/evaluate_models.py,Metric computation and selection evidence
+Methodology,Calibration,src/predictive_layer/calibration.py,Confidence-band policy generation
+Methodology,Risk logic,src/agent_layer/risk_engine.py,Deterministic risk scoring
+Methodology,Recommendations,src/agent_layer/recommender.py,Recommendation catalog and urgency mapping
+Methodology,Scenarios,src/agent_layer/scenario_rules.py,Deterministic parsing and validation
+Methodology,Scenarios,src/agent_layer/scenario_interpreter.py,Scenario comparison and explanation
+System Architecture,Predictive Layer,src/predictive_layer/inference_service.py,Serving path and scaler reuse
+System Architecture,Agent Layer,src/agent_layer/orchestrator.py,Decision and scenario orchestration
+System Architecture,Layer boundary,src/agent_layer/tools.py,Payload trimming and predictive call boundary
+System Architecture,Dashboard Layer,src/dashboard_layer/app.py,UI orchestration and tabs
+System Architecture,Dashboard adapter,src/dashboard_layer/backend_adapter.py,Layer integration adapter
+Experiments,Global metrics,out/predictive_layer/04_metrics_global_by_model.csv,Global model comparison
+Experiments,Dataset metrics,out/predictive_layer/04_metrics_by_dataset_by_model.csv,Per-subset performance
+Experiments,Latency,out/predictive_layer/04_latency_by_model.csv,Latency evidence
+Experiments,Calibration,out/predictive_layer/05_calibration_report.md,Confidence-band evidence
+Experiments,Robustness,out/predictive_layer/05_robustness_results.csv,Robustness evidence
+Experiments,Failures,out/agent_layer/08_failure_modes.txt,Failure mode inventory
+Experiments,Dashboard QA,out/dashboard_layer/09_test_matrix.txt,UI validation coverage
+Results,Champion decision,out/predictive_layer/champion_record.json,Champion and fallback record
+Results,Decision rationale,out/predictive_layer/04_champion_decision_record.md,Selection rationale
+Results,Scenario evidence,out/agent_layer/05_scenario_examples.json,Scenario comparison example
+Results,Dashboard evidence,fig/dashboard/dashboard_v1_4.png,Analysis tab screenshot
+Results,Dashboard evidence,fig/dashboard/dashboard_v1_5.png,Analysis tab screenshot
+Discussion,Residual risks,out/predictive_layer/08_residual_risks.md,Known limitations
+Discussion,State handling,out/dashboard_layer/08_state_handling_guide.txt,Engineering reliability discussion
+Reproducibility,Environment,environment.yml,Conda environment definition
+Reproducibility,Usage,USER_GUIDE.md,Operator-facing usage documentation
+Reproducibility,Runtime commands,README.md,Setup and launch instructions

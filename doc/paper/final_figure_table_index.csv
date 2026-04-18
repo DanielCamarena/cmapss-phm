@@ -1,0 +1,18 @@
+id,type,title,source,status
+F1,figure,Layered PHM system architecture,To be created from codebase modules,pending
+F2,figure,Predictive inference and deterministic decision flow,To be created from architecture notes,pending
+F3,figure,Summary tab screenshot,fig/dashboard/dashboard_v1_4.png,available
+F4,figure,Analysis tab screenshot,fig/dashboard/dashboard_v1_5.png,available
+F5,figure,Scenarios tab screenshot,fig/dashboard/dashboard_v1_9.png,available
+F6,figure,Technical Audit screenshot,To be captured from current dashboard,pending
+F7,figure,RUL interval / uncertainty illustration,out/predictive_layer/05_calibration_report.md,available
+F8,figure,Scenario comparison chart,Dashboard scenario output,available
+T1,table,CMAPSS subsets and problem structure,data/readme.txt,available
+T2,table,Selected vs removed features,out/eda/05_preprocessing_config.json,available
+T3,table,Candidate models and roles,out/research/02_model_matrix.csv,available
+T4,table,Global model metrics,out/predictive_layer/04_metrics_global_by_model.csv,available
+T5,table,Per-dataset model metrics,out/predictive_layer/04_metrics_by_dataset_by_model.csv,available
+T6,table,Latency and engineering tradeoffs,out/predictive_layer/04_latency_by_model.csv,available
+T7,table,Scenario comparison examples,out/agent_layer/05_scenario_examples.json,available
+T8,table,Failure modes and handling,out/agent_layer/08_failure_modes.txt,available
+T9,table,Contract and trace field mapping,out/dashboard_layer/03_mapping_fields_table.csv,available

@@ -1,0 +1,31 @@
+Final claim checklist
+
+- Claim: the system is implemented as Predictive -> Agent -> Dashboard.
+  Evidence: src/predictive_layer/*, src/agent_layer/*, src/dashboard_layer/*, README.md
+
+- Claim: the deployed champion is rf and fallback is hgb.
+  Evidence: out/predictive_layer/champion_record.json
+
+- Claim: gru has the best raw RMSE but was not promoted.
+  Evidence: out/predictive_layer/champion_record.json, out/predictive_layer/04_metrics_global_by_model.csv
+
+- Claim: the predictive layer uses selected features and a reused StandardScaler at serving time.
+  Evidence: out/eda/05_preprocessing_config.json, src/predictive_layer/inference_service.py
+
+- Claim: risk and recommendations are deterministic.
+  Evidence: src/agent_layer/risk_engine.py, src/agent_layer/recommender.py
+
+- Claim: scenario execution is deterministic and auditable.
+  Evidence: src/agent_layer/orchestrator.py, src/agent_layer/scenario_rules.py, out/agent_layer/audit_log.jsonl
+
+- Claim: the LLM is optional and non-central.
+  Evidence: src/agent_layer/llm_client.py, out/agent_layer/06_scenario_assistant_policy.txt
+
+- Claim: the dashboard exposes Summary, Analysis, Scenarios, and Technical Audit.
+  Evidence: src/dashboard_layer/app.py, out/dashboard_layer/01_screen_map_final.txt
+
+- Claim: the system includes service states and traceability.
+  Evidence: src/dashboard_layer/app.py, src/agent_layer/orchestrator.py, out/dashboard_layer/contracts_snapshot.json
+
+- Claim: the paper’s figures and tables are linked to real artifacts.
+  Evidence: doc/paper/final_figure_table_index.csv

@@ -1,0 +1,25 @@
+artifact,category,use_in_paper,notes
+out/eda/05_preprocessing_config.json,preprocessing,Methodology,Selected features and scaler policy
+out/eda/04_target_definition.txt,target,Methodology,Capped-RUL policy
+out/research/02_model_matrix.csv,research,Methodology,Model candidate rationale
+out/research/04_acceptance_criteria.txt,research,Experiments,Selection and validation criteria
+out/predictive_layer/04_metrics_global_by_model.csv,results,Experiments and Results,Global RMSE and MAE
+out/predictive_layer/04_metrics_by_dataset_by_model.csv,results,Experiments and Results,Per-dataset evidence
+out/predictive_layer/04_latency_by_model.csv,engineering,Experiments and Discussion,Latency tradeoff evidence
+out/predictive_layer/champion_record.json,selection,Results,Champion and fallback declaration
+out/predictive_layer/05_calibration_report.md,uncertainty,Experiments and Results,Confidence-band calibration
+out/predictive_layer/05_confidence_band_policy.json,uncertainty,Methodology,Interval policy implementation
+out/predictive_layer/08_residual_risks.md,limitations,Discussion,Residual model limitations
+out/agent_layer/02_risk_scoring_design.txt,agent,Methodology,Risk logic description
+out/agent_layer/05_scenario_assistant_flow.txt,agent,Methodology and Architecture,Scenario flow steps
+out/agent_layer/06_scenario_assistant_policy.txt,agent,Discussion,LLM optionality and fallback policy
+out/agent_layer/08_failure_modes.txt,agent,Experiments and Discussion,Failure analysis
+out/dashboard_layer/01_ui_backend_contract_v1.json,contracts,Architecture,UI-agent contract
+out/dashboard_layer/03_mapping_fields_table.csv,contracts,Architecture,Field mapping evidence
+out/dashboard_layer/05_analysis_design_notes.txt,dashboard,Results,Interpretability design rationale
+out/dashboard_layer/09_local_smoke_report.txt,dashboard,Experiments,Local validation report
+out/dashboard_layer/contract_integration_checklist.txt,dashboard,Architecture,Integration readiness
+fig/dashboard/dashboard_v1_3.png,figure,Results,Scenario UI evidence
+fig/dashboard/dashboard_v1_4.png,figure,Results,Analysis UI evidence
+fig/dashboard/dashboard_v1_5.png,figure,Results,Analysis/Fleet evidence
+fig/dashboard/dashboard_v1_9.png,figure,Results,Scenario comparison evidence
