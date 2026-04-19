@@ -59,7 +59,7 @@ C-MAPSS represents multivariate run-to-failure trajectories generated from a tur
 
 \begin{table}[H]
 \centering
-\caption{CMAPSS subsets and problem structure (T1).}
+\caption{CMAPSS subsets and problem structure.}
 \label{tab:cmapss_subsets}
 \begin{tabular}{lcccc}
 \toprule
@@ -213,7 +213,7 @@ Figure~\ref{fig:engine_schematic} provides a conceptual turbofan degradation and
 \draw[info] (cycle.north) -- ++(0,0.55) -| ([xshift=1.4cm]enginebox.south);
 
 \end{tikzpicture}
-\caption{Conceptual C-MAPSS turbofan monitoring schematic (F1), adapted from the NASA C-MAPSS user-guide context.}
+\caption{Conceptual C-MAPSS turbofan monitoring schematic, adapted from the NASA C-MAPSS user-guide context.}
 \label{fig:engine_schematic}
 \end{figure}
 
@@ -223,7 +223,7 @@ Preprocessing removes low-variance variables, fits a training-only standard scal
 
 \begin{table}[H]
 \centering
-\caption{Selected vs removed low-variance features (T2).}
+\caption{Selected vs removed low-variance features.}
 \label{tab:features}
 \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
 \toprule
@@ -256,7 +256,7 @@ Table~\ref{tab:model_matrix} summarizes the candidate-model roles.
 
 \begin{table}[H]
 \centering
-\caption{Candidate models and intended roles (T3).}
+\caption{Candidate models and intended roles.}
 \label{tab:models}
 \begin{tabular}{p{3.6cm} p{3.0cm} p{5.2cm} p{3.6cm}}
 \toprule
@@ -433,7 +433,7 @@ Table~\ref{tab:global_metrics} shows global metrics, while Table~\ref{tab:datase
 
 \begin{table}[H]
 \centering
-\caption{Global model metrics (T4).}
+\caption{Global model metrics.}
 \label{tab:global_metrics}
 \begin{tabular}{lrrr}
 \toprule
@@ -449,7 +449,7 @@ LSTM & 20.012 & 14.990 & 25,309 \\
 
 \begin{table}[H]
 \centering
-\caption{Per-dataset RMSE by model (T5).}
+\caption{Per-dataset RMSE by model.}
 \label{tab:dataset_metrics}
 \begin{tabular}{lrrrr}
 \toprule
@@ -465,7 +465,7 @@ LSTM & 18.784 & 21.728 & 15.733 & 20.468 \\
 
 \begin{table}[H]
 \centering
-\caption{Latency and engineering trade-offs (T6).}
+\caption{Latency and engineering trade-offs.}
 \label{tab:latency}
 \begin{tabular}{lrrr}
 \toprule
@@ -485,7 +485,7 @@ Although GRU obtains the best raw RMSE, the deployed champion remains RF due to 
 \subsection{Scenario and reliability evidence}
 \begin{table}[H]
 \centering
-\caption{Scenario comparison example (T7).}
+\caption{Scenario comparison example.}
 \label{tab:scenario_example}
 \begin{tabular}{lcc}
 \toprule
@@ -504,7 +504,7 @@ $\Delta$Risk score & \multicolumn{2}{c}{0} \\
 
 \begin{table}[H]
 \centering
-\caption{Failure modes and handling (T8).}
+\caption{Failure modes and handling.}
 \label{tab:failure_modes}
 \begin{tabularx}{\textwidth}{lX}
 \toprule
@@ -521,7 +521,7 @@ Unsafe scenario perturbation & Reject scenario with validation errors and safety
 
 \begin{table}[H]
 \centering
-\caption{Contract and trace field mapping (T9).}
+\caption{Contract and trace field mapping.}
 \label{tab:contracts}
 \begin{tabular}{lll}
 \toprule
@@ -540,27 +540,27 @@ Technical Audit & \texttt{audit\_record\_id}, \texttt{model\_version}, \texttt{s
 \centering
 \begin{subfigure}[b]{0.48\textwidth}
   \centering
-  \includegraphics[width=\textwidth]{dashboard_v1_4.png}
-  \caption{Summary tab (F3).}
+  \includegraphics[width=\textwidth]{dashboard_v1_3.png}
+  \caption{Summary tab.}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{dashboard_v1_5.png}
-  \caption{Analysis tab (F4).}
+  \caption{Analysis tab.}
 \end{subfigure}
 
 \vspace{0.5em}
 \begin{subfigure}[b]{0.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{dashboard_v1_9.png}
-  \caption{Scenarios tab (F5).}
+  \caption{Scenarios tab.}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.48\textwidth}
   \centering
-  \includegraphics[width=\textwidth]{dashboard_v1_8.png}
-  \caption{Technical Audit tab (F6).}
+  \includegraphics[width=\textwidth]{dashboard_v1_10.png}
+  \caption{Technical Audit tab.}
 \end{subfigure}
 \caption{Dashboard evidence across operator and audit workflows.}
 \label{fig:dashboard_suite}
@@ -706,7 +706,7 @@ Technical Audit & \texttt{audit\_record\_id}, \texttt{model\_version}, \texttt{s
 \addplot+[error bars/.cd, y dir=both, y explicit] coordinates {(1,123.955) +- (0,31.0)};
 \end{axis}
 \end{tikzpicture}
-\caption{RUL interval illustration (F7) using calibrated confidence-band policy around a point prediction.}
+\caption{RUL interval illustration using calibrated confidence-band policy around a point prediction.}
 \label{fig:interval_plot}
 \end{figure}
 
