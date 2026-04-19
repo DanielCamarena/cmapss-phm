@@ -377,3 +377,23 @@ Generate three files for this project:
 - Include all required dependencies to run the project
 
 Output the three files clearly separated.
+
+## Academic paper
+
+Create a work plan to produce the final academic paper for the project, aligned with the current application implementation:
+
+- structure the paper following a standard scientific format (Abstract, Introduction, Related Work, Methodology, System Architecture, Experiments, Results, Discussion, Conclusion)
+- describe the AI system (dashboard, predictive_layer, agent_layer, scenarios) as an engineering artifact
+- include evaluation evidence (model performance, scenario analysis, failure cases, error analysis)
+- address engineering constraints (cost, latency, safety, reliability)
+- include reproducibility elements (data sources, pipeline, configuration, assumptions)
+- document system traceability and auditability (as implemented in Technical Audit and Scenarios)
+- connect the demo (dashboard) with the scientific narrative
+
+Ensure the plan includes:
+- section-by-section objectives
+- required figures/tables (e.g. RUL predictions, scenario comparisons, model evaluation)
+- mapping from codebase modules to paper sections
+- experiments and validation strategy
+
+Save it as `plan6_academic_paper.md`.
