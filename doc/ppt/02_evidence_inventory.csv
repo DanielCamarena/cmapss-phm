@@ -1,0 +1,22 @@
+artifact,category,use_in_deck,slides,notes
+data/readme.txt,data,C-MAPSS overview,"3,6",Subset definitions and task framing
+out/eda/05_preprocessing_config.json,preprocessing,Selected features and scaling,"6,15",Frozen preprocessing config
+out/eda/04_target_definition.txt,target,Capped-RUL policy,"6",Target definition evidence
+out/research/02_model_matrix.csv,research,Candidate-model portfolio,"7",Model roles and rationale
+out/predictive_layer/champion_record.json,selection,Champion and fallback,"7,10",RF champion and HGB fallback
+out/predictive_layer/04_metrics_global_by_model.csv,results,Global predictive metrics,"7,10",RMSE and MAE evidence
+out/predictive_layer/04_metrics_by_dataset_by_model.csv,results,Per-dataset performance,"10,15",Subset-level evidence
+out/predictive_layer/04_latency_by_model.csv,engineering,Latency tradeoffs,"7,10",Deployment-oriented comparison
+out/agent_layer/02_risk_scoring_design.txt,agent,Risk logic summary,"8",Deterministic risk design
+out/agent_layer/05_scenario_examples.json,agent,Scenario comparison example,"11",Baseline vs scenario outputs
+out/agent_layer/06_scenario_assistant_policy.txt,agent,Non-central LLM policy,"8,12",Rules-first scenario policy
+out/agent_layer/08_failure_modes.txt,agent,Failure-mode and safety evidence,"12,15",Reliability and safety handling
+out/dashboard_layer/01_ui_backend_contract_v1.json,contracts,System architecture and contracts,"5,15",Layer interface evidence
+out/dashboard_layer/03_mapping_fields_table.csv,contracts,Backup contract mapping,"15",Traceability backup
+out/dashboard_layer/08_state_handling_guide.txt,dashboard,Service-state handling,"8,12",Reliability UX
+fig/dashboard/dashboard_v1_4.png,figure,Summary screenshot,"9",Operator-facing decision UI
+fig/dashboard/dashboard_v1_5.png,figure,Analysis screenshot,"9",Interpretability UI
+fig/dashboard/dashboard_v1_8.png,figure,Technical Audit screenshot,"9",Traceability UI
+fig/dashboard/dashboard_v1_9.png,figure,Scenarios screenshot,"9,11",Scenario UI evidence
+doc/paper/main.tex,paper,Narrative and visual alignment,"1,2,4,5,14",Canonical paper source
+doc/paper/final_figure_table_index.csv,paper,Figure / table alignment,"15",Cross-check between paper and deck

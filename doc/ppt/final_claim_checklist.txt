@@ -1,0 +1,22 @@
+Final slide claim checklist
+
+- Claim: the system is implemented as a Predictive -> Agent -> Dashboard stack.
+  Evidence: doc/paper/main.tex; src/predictive_layer/*; src/agent_layer/*; src/dashboard_layer/*
+
+- Claim: the deployed champion is rf and fallback is hgb.
+  Evidence: out/predictive_layer/champion_record.json
+
+- Claim: gru achieved the best raw RMSE but was not promoted.
+  Evidence: out/predictive_layer/champion_record.json; out/predictive_layer/04_metrics_global_by_model.csv
+
+- Claim: risk and recommendations are deterministic.
+  Evidence: src/agent_layer/risk_engine.py; src/agent_layer/recommender.py
+
+- Claim: scenario execution is deterministic and auditable even when LLM assistance is available.
+  Evidence: src/agent_layer/orchestrator.py; src/agent_layer/scenario_rules.py; out/agent_layer/06_scenario_assistant_policy.txt
+
+- Claim: the deck screenshots reflect the implemented dashboard tabs.
+  Evidence: fig/dashboard/dashboard_v1_4.png; fig/dashboard/dashboard_v1_5.png; fig/dashboard/dashboard_v1_8.png; fig/dashboard/dashboard_v1_9.png
+
+- Claim: every major slide in the deck is tied to a project artifact.
+  Evidence: doc/ppt/final_slide_index.csv; doc/ppt/02_evidence_inventory.csv
