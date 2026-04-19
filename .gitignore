@@ -1,4 +1,5 @@
 __pycache__/
 *.pyc
 .vscode/
+cmapss_phm.code-workspace
 out/dashboard_layer/*.log

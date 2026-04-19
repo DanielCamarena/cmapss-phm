@@ -47,7 +47,7 @@ The implemented candidate models are:
 - `LSTM`
 - `GRU`
 
-The current champion record is stored in [out/predictive_layer/champion_record.json](<C:/Users/quant/Dropbox/Math4ML/BEIHANG/cmapss_phm/out/predictive_layer/champion_record.json:1>).
+The current champion record is stored in [out/predictive_layer/champion_record.json](out/predictive_layer/champion_record.json).
 
 Current decision:
 - Champion: `rf`
@@ -61,14 +61,14 @@ Why `rf` won:
 
 ## Main project folders
 
-- [data](<C:/Users/quant/Dropbox/Math4ML/BEIHANG/cmapss_phm/data:1>) - C-MAPSS source files, samples, and test scenario inputs
-- [src/eda](<C:/Users/quant/Dropbox/Math4ML/BEIHANG/cmapss_phm/src/eda:1>) - Plan 1 EDA and preprocessing generation
-- [src/research](<C:/Users/quant/Dropbox/Math4ML/BEIHANG/cmapss_phm/src/research:1>) - Plan 2 research synthesis
-- [src/predictive_layer](<C:/Users/quant/Dropbox/Math4ML/BEIHANG/cmapss_phm/src/predictive_layer:1>) - model training, evaluation, calibration, and inference
-- [src/agent_layer](<C:/Users/quant/Dropbox/Math4ML/BEIHANG/cmapss_phm/src/agent_layer:1>) - deterministic risk logic, recommendations, and scenarios
-- [src/dashboard_layer](<C:/Users/quant/Dropbox/Math4ML/BEIHANG/cmapss_phm/src/dashboard_layer:1>) - Streamlit application
-- [out](<C:/Users/quant/Dropbox/Math4ML/BEIHANG/cmapss_phm/out:1>) - generated artifacts, contracts, metrics, and audit outputs
-- [fig](<C:/Users/quant/Dropbox/Math4ML/BEIHANG/cmapss_phm/fig:1>) - dashboard and EDA figures
+- [data](data/) - C-MAPSS source files, samples, and test scenario inputs
+- [src/eda](src/eda/) - Plan 1 EDA and preprocessing generation
+- [src/research](src/research/) - Plan 2 research synthesis
+- [src/predictive_layer](src/predictive_layer/) - model training, evaluation, calibration, and inference
+- [src/agent_layer](src/agent_layer/) - deterministic risk logic, recommendations, and scenarios
+- [src/dashboard_layer](src/dashboard_layer/) - Streamlit application
+- [out](out/) - generated artifacts, contracts, metrics, and audit outputs
+- [fig](fig/) - dashboard and EDA figures
 
 ## How to run
 
@@ -103,7 +103,7 @@ The dashboard can use:
 To preconfigure a dashboard dataset:
 
 ```powershell
-$env:CMAPSS_DASHBOARD_DATASET_PATH="C:\path\to\dashboard_dataset.csv"
+$env:CMAPSS_DASHBOARD_DATASET_PATH="data\dashboard_dataset.csv"
 streamlit run src/dashboard_layer/app.py
 ```
 
