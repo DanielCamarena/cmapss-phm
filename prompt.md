@@ -397,3 +397,29 @@ Ensure the plan includes:
 - experiments and validation strategy
 
 Save it as `plan6_academic_paper.md`.
+
+## PPT
+
+Generate a professional 10-slide PowerPoint (.pptx) based on the provided markdown (doc/ppt/02_slide_content_4m.md).
+
+Additionally, use the Version 2 PPT (doc/ppt/final_presentation_v2.pptx) as a visual and conceptual reference for style, layout, and figures, but DO NOT copy content directly. Instead, simplify and adapt it for a 4-minute presentation.
+
+Requirements:
+- Follow strictly the slide structure and order from the markdown.
+- Each slide must have 3–5 concise bullet points max.
+- Emphasize key ideas visually:
+  • “NOT sufficient for PHM deployment”
+  • “Predictive → Agent → Dashboard”
+  • “Best model ≠ deployed model”
+- Include simple diagrams where appropriate (problem and architecture).
+- Keep slides minimal, readable in <10 seconds.
+- Maintain clean, modern design consistent with the reference PPT.
+
+Also generate a separate speaker notes document (.md or .txt):
+- 2–4 sentences per slide
+- Clear explanation flow for a 4-minute presentation
+- Focus on explaining the logic, not reading the slide
+
+Output:
+1) PowerPoint (.pptx)
+2) Speaker notes file (.md)

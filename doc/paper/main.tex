@@ -26,8 +26,9 @@
 
 \graphicspath{{./fig/dashboard/}{./fig/eda/}}
 
-\title{Traceable Predictive Maintenance for NASA C-MAPSS:\\
-An End-to-End PHM System with Calibrated RUL Prediction, Deterministic Risk Logic, and Interactive Scenario Analysis}
+\title{Predictive Maintenance for NASA C-MAPSS:\\
+An End-to-End PHM System with Calibrated RUL Prediction,
+Risk Logic, and Scenario Analysis}
 \author{CMAPSS-PHM Project}
 \date{April 2026}
 
@@ -38,6 +39,13 @@ An End-to-End PHM System with Calibrated RUL Prediction, Deterministic Risk Logi
 \begin{abstract}
 This paper presents an end-to-end predictive maintenance application built on the NASA C-MAPSS benchmark. The system combines a multi-model predictive layer for Remaining Useful Life (RUL) estimation, a deterministic agent layer for risk scoring and maintenance recommendations, and a dashboard layer for decision presentation, scenario analysis, and technical auditability. Candidate models include Random Forest, HistGradientBoosting, LSTM, and GRU. Although GRU achieved the best raw RMSE, the deployed champion is Random Forest because it offered stronger stability and integration readiness. The application augments point predictions with calibrated confidence bands, converts them into traceable risk and recommendation outputs, and exposes the full workflow through interactive user and technical-audit views. The result is both a scientific study on C-MAPSS PHM and an implemented AI system suitable for reproducible deployment-oriented evaluation.
 \end{abstract}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig/project_research_roadmap.png}
+  \caption{Graphical abstract of the end-to-end PHM system: from NASA C-MAPSS data ingestion, predictive modeling (RF, HGB, LSTM, GRU), champion selection, deterministic agent layer (risk, recommendations, scenarios), to the final interactive dashboard (summary, analysis, scenarios, technical audit). The roadmap outlines the sequential and modular research workflow implemented in this work.}
+  \label{fig:roadmap}
+\end{figure}
 
 \section{Introduction}
 Remaining Useful Life (RUL) estimation is a core task in prognostics and health management (PHM), but benchmark-oriented studies often stop at predictive model scores. Real maintenance systems need uncertainty handling, deterministic decision logic, scenario analysis, explainability, and traceability in addition to point estimates. This work addresses that integration gap by implementing and evaluating a layered PHM stack over NASA C-MAPSS data \cite{nasa_cmapss_guide,saxena2008damage}.

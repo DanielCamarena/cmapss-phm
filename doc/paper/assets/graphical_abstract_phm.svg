@@ -1,0 +1,79 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F4EC"/>
+
+  <!-- Title cue -->
+  <text x="800" y="88" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#1F2937">
+    From benchmark RUL prediction to a deployable, traceable PHM decision system
+  </text>
+
+  <!-- Flow arrows -->
+  <path d="M330 420 C395 420, 425 420, 490 420" stroke="#8B5E34" stroke-width="10" stroke-linecap="round"/>
+  <path d="M480 400 L520 420 L480 440" fill="#8B5E34"/>
+
+  <path d="M700 420 C765 420, 795 420, 860 420" stroke="#8B5E34" stroke-width="10" stroke-linecap="round"/>
+  <path d="M850 400 L890 420 L850 440" fill="#8B5E34"/>
+
+  <path d="M1070 420 C1135 420, 1165 420, 1230 420" stroke="#8B5E34" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1220 400 L1260 420 L1220 440" fill="#8B5E34"/>
+
+  <!-- Traceability backbone -->
+  <rect x="420" y="605" width="760" height="86" rx="43" fill="#D9EDE8" stroke="#156F69" stroke-width="4"/>
+  <text x="800" y="658" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#156F69">
+    Traceability / Contracts
+  </text>
+  <path d="M610 590 L610 515" stroke="#156F69" stroke-width="6" stroke-dasharray="10 10" stroke-linecap="round"/>
+  <path d="M980 590 L980 515" stroke="#156F69" stroke-width="6" stroke-dasharray="10 10" stroke-linecap="round"/>
+
+  <!-- Block 1 -->
+  <rect x="90" y="310" width="240" height="220" rx="30" fill="#FFFDF8" stroke="#C9B18A" stroke-width="4"/>
+  <circle cx="210" cy="365" r="34" fill="#E9E1D0"/>
+  <path d="M188 382 C205 345, 217 345, 232 382" stroke="#8B5E34" stroke-width="7" stroke-linecap="round"/>
+  <path d="M210 338 L210 392" stroke="#8B5E34" stroke-width="7" stroke-linecap="round"/>
+  <text x="210" y="455" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#1F2937">
+    Point RUL
+  </text>
+  <text x="210" y="492" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#1F2937">
+    prediction
+  </text>
+
+  <!-- Block 2 -->
+  <rect x="490" y="280" width="220" height="280" rx="30" fill="#FFF4F1" stroke="#B54848" stroke-width="5"/>
+  <circle cx="600" cy="360" r="44" fill="#F5DAD7"/>
+  <line x1="575" y1="335" x2="625" y2="385" stroke="#B54848" stroke-width="8" stroke-linecap="round"/>
+  <line x1="625" y1="335" x2="575" y2="385" stroke="#B54848" stroke-width="8" stroke-linecap="round"/>
+  <text x="600" y="462" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#B54848">
+    Not sufficient
+  </text>
+  <text x="600" y="500" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#B54848">
+    for deployment
+  </text>
+
+  <!-- Block 3 -->
+  <rect x="860" y="280" width="210" height="280" rx="30" fill="#EEF7F5" stroke="#156F69" stroke-width="5"/>
+  <rect x="905" y="332" width="120" height="48" rx="14" fill="#FFFFFF" stroke="#156F69" stroke-width="3"/>
+  <rect x="905" y="397" width="120" height="48" rx="14" fill="#FFFFFF" stroke="#156F69" stroke-width="3"/>
+  <rect x="905" y="462" width="120" height="48" rx="14" fill="#FFFFFF" stroke="#156F69" stroke-width="3"/>
+  <text x="965" y="364" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#156F69">Predictive</text>
+  <text x="965" y="429" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#156F69">Agent</text>
+  <text x="965" y="494" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#156F69">Dashboard</text>
+  <path d="M965 382 L965 395" stroke="#156F69" stroke-width="5" stroke-linecap="round"/>
+  <path d="M965 447 L965 460" stroke="#156F69" stroke-width="5" stroke-linecap="round"/>
+  <path d="M950 390 L965 404 L980 390" fill="none" stroke="#156F69" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M950 455 L965 469 L980 455" fill="none" stroke="#156F69" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Block 4 dominant -->
+  <rect x="1260" y="220" width="260" height="340" rx="34" fill="#8B5E34"/>
+  <rect x="1288" y="250" width="204" height="86" rx="18" fill="#A97842"/>
+  <text x="1390" y="304" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">
+    Outcome
+  </text>
+  <text x="1390" y="398" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" fill="#FFFFFF">
+    RUL + risk
+  </text>
+  <text x="1390" y="448" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" fill="#FFFFFF">
+    +
+  </text>
+  <text x="1390" y="500" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" fill="#FFFFFF">
+    recommendation
+  </text>
+</svg>
